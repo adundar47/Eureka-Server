@@ -25,6 +25,7 @@ dependencyManagement {
 group = 'com.adundar'
 version = '0.0.1'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 jar {
     baseName = 'eureka-server'
@@ -40,7 +41,6 @@ repositories {
 }
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter')
 	compile('org.springframework.boot:spring-boot-starter-web'){
         exclude module: 'spring-boot-starter-tomcat'
     }
